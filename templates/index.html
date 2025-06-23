@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enhanced House Price Predictor</title>
+    <style>
+        body { font-family: Arial; margin: 50px; background: #f5f5f5; }
+        .form-box { background: white; padding: 30px; border-radius: 10px; width: 300px; box-shadow: 0 0 10px #ccc; }
+        input, button { width: 100%; margin: 10px 0; padding: 10px; border: 1px solid #aaa; border-radius: 5px; }
+        h2 { text-align: center; }
+        div{
+            background color:"brown"
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>House Price Predictor</h2>
+        <form method="POST" action="/predict">
+            <input type="text" name="area" placeholder="Area (sq.ft)" required>
+            <input type="text" name="bedrooms" placeholder="Number of bedrooms" required>
+            <input type="text" name="bathrooms" placeholder="Number of bathrooms" required>
+            <button type="submit">Predict Price</button>
+        </form>
+        {% if prediction %}
+            <h3>Predicted Price: ₹ {{ prediction }} lakhs</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
