@@ -6,7 +6,7 @@ This is a simple web application that predicts house prices based on the area (i
 
 👉 [Click here to try the app on Render](https://your-render-app-url.onrender.com)
 
-> Replace the above link with your actual deployed Render URL
+>
 
 ## 📦 Technologies Used
 - Python
