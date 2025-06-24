@@ -1,45 +1,23 @@
-# 🏠 House Price Predictor
+# 🏡 House Price Prediction App
 
-This is a simple machine learning web app that predicts house prices based on area (in square feet). The app is built using **Flask**, and the model is trained using **Linear Regression**.
+This is a simple web application that predicts house prices based on the area (in square feet). It uses a linear regression model trained with scikit-learn and is built with Flask.
 
-## 🚀 Features
+## 🚀 Live Demo
 
-- Predict house price by entering the area
-- Web interface using HTML and Flask
-- Model trained with scikit-learn and joblib
-- Deployed on Render
+👉 [Click here to try the app on Render](https://your-render-app-url.onrender.com)
 
-## 💡 How It Works
+> Replace the above link with your actual deployed Render URL
 
-- Enter an area (e.g., 2700 sq.ft)
-- Click **Predict**
-- The app shows you the estimated price in lakhs 💰
-
-## 🛠️ Technologies Used
-
-- Python 3.13
+## 📦 Technologies Used
+- Python
 - Flask
 - Scikit-learn
-- Joblib
-- HTML (Jinja2 templates)
-- Render for deployment
+- HTML & CSS
+- Render (for deployment)
 
-## 📷 Screenshot
-
-![screenshot](screenshot.png)
-
-## 🔗 Live Demo
-
-Visit the live site: [🌐 Hosted on Render](https://your-app-url-on-render.com)
+## 🔧 How It Works
+1. Enter the area in square feet.
+2. Click the **Predict** button.
+3. The app returns the estimated price in lakhs.
 
 ## 📁 Project Structure
-
-
-## 👨‍💻 Author
-
-**Abhishek Shukla**  
-📧 abhishek.s.shukla@slrtce.in  
-🔗 [GitHub Profile](https://github.com/abhishekshukla1212)
-
----
-
