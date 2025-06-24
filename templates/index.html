@@ -46,7 +46,12 @@
 
         {% if prediction is not none %}
         <div class="alert alert-success mt-4 text-center">
-            💰 Predicted Price: <strong>{{ prediction | round(2) }}</strong> lakhs
+            {% if prediction is defined %}
+    <div class="alert alert-success mt-4 text-center">
+        💰 Predicted Price: <strong>{{ prediction|float|round(2) }}</strong> lakhs
+    </div>
+{% endif %}
+
         </div>
         {% endif %}
     </div>
