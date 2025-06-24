@@ -15,19 +15,9 @@ def predict():
     prediction = model.predict([[area]])
     return render_template("index.html", prediction=prediction[0])
 
-if __name__ == '__main__':
-    app.run(debug=True)
-import os
-
-# existing code...
-
+# ✅ Correct place and way to run the app
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Render sets PORT env variable
+    port = int(os.environ.get("PORT", 5000))  # Render will set PORT
     app.run(host="0.0.0.0", port=port)
 
 
-# existing code...
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Render sets PORT env variable
-    app.run(host="0.0.0.0", port=port)
